@@ -1,0 +1,112 @@
+/*  HEADER - MOSQUERA*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header img {
+    width: 40px;
+    object-fit: contain;
+}
+header div {
+    display: flex;
+    flex-direction: row;
+
+}
+
+/*  IMAGEN PRINCIPAL - MOSQUERA*/
+.imagen-principal {
+    display: flex;
+    justify-content: center;
+    border-radius: 40px;
+}
+
+.imagen-principal img{
+    margin: 30px 0px;
+    width: 900px;
+    object-fit: contain;
+    border-radius: 40px;
+}
+
+
+/*  CTA - MOSQUERA*/
+
+.CTA-comp-principal {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;}
+
+.CTA-cont-img img{
+    width: 200px;
+}
+
+.CTA-cont-texto {
+    display: flex;
+    flex-direction: row;
+    background-color: gray;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+
+.CTA-input{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.CTA-cont-texto p {
+    max-width: 250px;
+}
+
+/* SWIPER - JUAN PABLO*/
+ .use-swiper{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+ }
+
+ .use-swiper img{
+    width: 200px;
+    object-fit: contain;
+ }
+
+ /* CONTROLLER - JUAN PABLO*/
+
+ .controller div img {
+    width: 500px;
+    object-fit: contain;
+ }
+
+ .controller {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ .controller-text-container{
+    max-width: 300px;
+ }
+
+  /* MORE INFO- JUAN PABLO*/
+
+  .use-more-info{
+    margin: 60px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+ }
+.use-more-info div{
+    display: flex;
+    flex-direction: column;
+}
+
+ .use-more-info img{
+    width: 200px;
+    margin: 10px 0;
+    object-fit: contain;
+ }
