@@ -1,14 +1,35 @@
+/* DOCUMENTO */
+
+body {
+	margin: 0;
+	background-color: #16191D;
+}
+
+footer {
+	background-color: #191C21;
+}
+
+header {
+	background-color: #191C21;
+}
+
+img {
+	border-radius: 30px;
+}
+
 /* FUENTES */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
 h1, h2, h3 {
 	font-family: 'Inter', sans-serif;
 	font-weight: bold;
+	color: white;
 }
 
 p {
 	font-family: 'Inter', sans-serif;
 	font-weight: normal;
+	color: white;
 }
 
 /*  HEADER - MOSQUERA*/
@@ -17,6 +38,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 10px;
 }
 
 header img {
@@ -31,16 +53,15 @@ header div {
 .header-navegacion{
 }
 .header-navegacion img {
-	border-radius: 100%;
 	margin: 0 10px;
-	object-fit: cover;
+	object-fit: contain;
+	border-radius: 0;
 }
 
 /*  IMAGEN PRINCIPAL - MOSQUERA*/
 .imagen-principal {
     display: flex;
     justify-content: center;
-    border-radius: 40px;
     flex-direction: column;
     align-items: center;
 }
@@ -49,7 +70,6 @@ header div {
     margin: 30px 0px;
     width: 900px;
     object-fit: contain;
-    border-radius: 40px;
 }
 
 
@@ -72,7 +92,6 @@ header div {
     height: 225px;
     width: 350px;
     margin-left: 50px;
-    border-radius: 30px;
 }
 
 .CTA-cont-texto {
@@ -154,8 +173,8 @@ header div {
     width: 200px;
     height: 300px;
     margin: 10px 0;
-    object-fit: cover;
-    border-radius: 30px;
+    object-fit: contain;
+    background-color: lightslategray;
  }
 
  /* STORE - JUAN PABLO*/
