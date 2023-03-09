@@ -109,4 +109,39 @@ header div {
     width: 200px;
     margin: 10px 0;
     object-fit: contain;
- }
+}
+
+ /* STORE - JUAN PABLO*/
+
+ .store div img {
+    width: 500px;
+    object-fit: contain;
+}
+
+ .store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ .store-text-container{
+    max-width: 300px;
+}
+
+/* FOOTER - JUAN PABLO*/
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    margin-left: 150px;
+    margin-right: 100px;
+}
+
+footer img {
+    height: 80px;
+    width: 200px;
+}
