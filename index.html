@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Golos+Text:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link
+
+rel="stylesheet"
+href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.css">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
 
@@ -40,8 +52,41 @@
 
     
     <!-- Aqui va la imagen principal. Imagen cambia con el tiempo -->
-    <section class="imagen-principal">
-        <img src="./assets/hero.webp" alt="">
+    <div class="swiper swiper-hero">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-images">
+            <img
+              src="./assets/fifa.webp"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/cod.webp"
+              alt=""
+            />
+          </div>
+          <div class="swiper-slide">
+            <img
+              src="./assets/The-Last-of-Us.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+  
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+  
+        <!-- If we need scrollbar -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+      </div>
+
+    <section class="imagen-principal" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
 	<div class="imagen-principal-texto">
 		<h2>WELCOME TO PLAYSTATION</h2>
 		<p>The highest form of entertainment, right at home</p>
@@ -49,7 +94,7 @@
     </section>
 
   <!-- Aqui va el call to action. Como todos, el boton es responsive-->  
-    <section class="CTA">
+    <section class="CTA" data-aos="fade-down" data-aos-duration="1000" data-aos-once="false">
         <div class="CTA-comp-principal">
             <div class="CTA-cont-texto"> 
                 <div class="CTA-texto">
@@ -71,22 +116,48 @@
     </section>
 
       <!-- Aqui va el swiper. Imagenes pasan con click-->
-      <section class="use-swiper">
-	<div class="use-swiper-block" id="use-swiper-block">
-          <div>
-	    <img src="./assets/fifa.webp" alt="">
-	  </div>
-	  <div>
-	    <img src="./assets/cod.webp" alt="">
-	  </div>
-	  <div>
-	    <img src="./assets/The-Last-of-Us.jpg" alt="">
-	  </div>
-	</div>
-      </section>  
+      
+      <div class="carousel" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
+        <h1>GAMES FOR YOU</h1>
+        <div class="carousel__contenedor">
+            <button aria-label="Anterior" class="carousel__anterior">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+
+            <div class="carousel__lista">
+                <div class="carousel__elemento">
+                    <img src="assets/cod.webp" alt="Rock and Roll Hall of Fame">
+                    <p>Rock and Roll Hall of Fame</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/cod.webp" alt="Constitution Square - Tower I">
+                    <p>Constitution Square - Tower I</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/cod.webp" alt="Empire State Building">
+                    <p>Empire State Building</p>
+                </div>
+                <div class="carousel__elemento">
+                    <img src="assets/cod.webp" alt="Harmony Tower">
+                    <p>Harmony Tower</p>
+                </div>
+
+                <div class="carousel__elemento">
+                    <img src="assets/cod.webp" alt="Empire State Building">
+                    <p>Empire State Building</p>
+                </div>
+            </div>
+
+            <button aria-label="Siguiente" class="carousel__siguiente">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+        </div>
+
+        <div role="tablist" class="carousel__indicadores"></div>
+    </div>
 
         <!-- Aqui va la imagen del control-->
-        <section class="controller">
+        <section class="controller" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
           <div class="controller-block">
             <div class="controller-text-container">
                 <h1> POWERFUL GAME CONTROLLER</h1>
@@ -99,7 +170,7 @@
         </section>
 
      <!-- Aqui va USER INFO-->
-        <section class="use-more-info">
+        <section class="use-more-info" data-aos="fade-up" data-aos-duration="1000" data-aos-once="false">
 	  <div class="use-more-info-block">
             <div>
                 <img src="./assets/ps5.webp" alt="">
@@ -143,7 +214,15 @@
     </footer>
     
     
-        
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+    <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 3000,
+                once: true,
+            });
+        </script>
 </body>
 </html>

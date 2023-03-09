@@ -1,9 +1,11 @@
 /* DOCUMENTO */
+*{
+    font-family: 'Golos Text', sans-serif;
+}
 
 body {
 	margin: 0;
 	background-color: #16191D;
-	padding: 0 100px;
 }
 
 footer {
@@ -17,28 +19,93 @@ header {
 img {
 	border-radius: 30px;
 }
+ h1, h2, h3 {
+    color: white;
+ }
 
-/* FUENTES */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
 
-h1, h2, h3 {
-	font-family: 'Inter', sans-serif;
-	font-weight: bold;
-	color: white;
+/* SWIPER */
+
+.swiper-wrapper img {
+    margin-left: 120px;
+    max-width: 80%;
 }
 
-p {
-	font-family: 'Inter', sans-serif;
-	font-weight: normal;
-	color: white;
+/* CARROUSEL */
+
+/* --- --- CAROUSEL --- --- */
+
+.carousel{
+   margin: 90px 200px;
+
 }
 
-button {
-	font-family: 'Inter', sans-serif;
-	font-weight: normal;
-	color: black;
+.carousel img {
+    width: 300px;
+    object-fit: contain;
 }
 
+.carousel p {
+    color: white;   
+}
+
+.carousel__contenedor {
+	position: relative;
+}
+
+.carousel__anterior,
+.carousel__siguiente {
+	position: absolute;
+	display: block;
+	width: 30px;
+	height: 30px;
+	border: none;
+	top: calc(50% - 35px);
+	cursor: pointer;
+	line-height: 30px;
+	text-align: center;
+	background: none;
+	color: #fff;
+	opacity: 20%;
+}
+
+.carousel__anterior:hover,
+.carousel__siguiente:hover {
+	opacity: 100%;
+}
+
+.carousel__anterior {
+	left: -30px;
+}
+
+.carousel__siguiente {
+	right: -30px;
+}
+
+.carousel__lista {
+	overflow: hidden;
+}
+
+.carousel__elemento {
+	text-align: center;
+}
+
+.carousel__indicadores .glider-dot {
+	display: block;
+	width: 30px;
+	height: 4px;
+	background: #fff;
+	opacity: .2;
+	border-radius: 0;
+}
+
+.carousel__indicadores .glider-dot:hover {
+	opacity: .5;
+}
+
+.carousel__indicadores .glider-dot.active {
+	opacity: 1;
+}
 
 /*  HEADER - MOSQUERA*/
 
@@ -54,6 +121,11 @@ header {
 	justify-content: space-between;
 }
 
+header input {
+    border-radius: 15px;
+    height: 20px;
+}
+
 header img {
     width: 40px;
     height: 40px;
@@ -63,11 +135,21 @@ header img {
 header div {
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
-.header-navegacion{
+
+header div button {
+    margin: 0px 10px;
+    width: 70px;
+    height: 30px;
+    border-radius: 15px;
+    font-weight: bold;
+    color:#16191D;
 }
+ 
 .header-navegacion img {
-	margin: 0 10px;
+    width: 30px;
+	margin: 0 20px;
 	object-fit: contain;
 	border-radius: 0;
 }
@@ -80,6 +162,12 @@ header div {
     align-items: center;
 }
 
+.imagen-principal-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
 .imagen-principal img{
     margin-top: 30px ;
     width: 900px;
@@ -88,6 +176,12 @@ header div {
 
 .imagen-principal h2{
 	margin-bottom: 0;
+    font-size: 50px;
+}
+
+.imagen-principal p {
+    color: white;
+    font-weight: 200;
 }
 
 /*  CTA - MOSQUERA*/
@@ -97,6 +191,7 @@ header div {
     flex-direction: row;
     justify-content: space-between;
     width: 900px;
+    align-items: center;
 }
 
 .CTA {
@@ -113,20 +208,37 @@ header div {
 }
 
 .CTA-cont-texto {
+    padding: 20px 10px;
+    border-radius: 50px;
+    background-color: #252a30;
     display: flex;
     flex-direction: row;
     padding: 10px 30px;
     border-radius: 30px;
+    color: rgb(194, 194, 194);
 }
 
-.CTA-input{
+
+.CTA-input {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    align-content: flex-start;
     justify-content: center;
+}
+
+.CTA input {
+    margin: 10px 0;
+    height: 30px;
+    border-radius: 10px;
 }
 
 .CTA-boton{
 	margin-top: 10px;
+    width: 90px;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
 }
 
 .CTA-cont-texto p {
@@ -138,6 +250,16 @@ header div {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
+}
+
+.CTA-texto h3 {
+    font-size: 40px;
+    text-align: left;
+}
+
+.CTA p {
+    margin-bottom: 40px;
 }
 
 /* SWIPER - JUAN PABLO*/
@@ -239,14 +361,13 @@ header div {
 /* FOOTER - JUAN PABLO*/
 
 footer {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 25px 0;
     border-radius: 30px 30px 0 0;
-    margin-left: 25%;
 }
 
 footer img {
