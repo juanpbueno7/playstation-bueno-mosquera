@@ -1,3 +1,16 @@
+/* FUENTES */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+h1, h2, h3 {
+	font-family: 'Inter', sans-serif;
+	font-weight: bold;
+}
+
+p {
+	font-family: 'Inter', sans-serif;
+	font-weight: normal;
+}
+
 /*  HEADER - MOSQUERA*/
 
 header {
