@@ -304,6 +304,10 @@ header div button {
     max-width: 300px;
  }
 
+ .controller p{
+    color: #fff;
+ }
+
   /* MORE INFO- MOSQUERA*/
 
   .use-more-info{
@@ -322,6 +326,7 @@ header div button {
 .use-more-info-block div{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
  .use-more-info img{
@@ -339,6 +344,18 @@ header div button {
 	 text-align: center;
  }
 
+ .use-more-info p{
+    color: #fff;
+ }
+
+ .use-more-info button{
+    margin-top: 10px;
+    width: 90px;
+    border-radius: 5px;
+    height: 40px;
+    font-weight: bold;
+ }
+
  /* STORE - JUAN PABLO*/
 
  .store div img {
@@ -352,6 +369,7 @@ header div button {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    color: #fff;
 }
 
  .store-text-container{
@@ -379,5 +397,5 @@ footer img {
 footer p {
 	max-width: 750px;
 	text-align: center;
-	color: black;
+	color: #16191D;
 }
