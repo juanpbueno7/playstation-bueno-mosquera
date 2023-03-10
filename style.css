@@ -205,6 +205,8 @@ header div button {
     height: 225px;
     width: 350px;
     margin-left: 50px;
+    object-fit: contain;
+    border-radius: 30px;
 }
 
 .CTA-cont-texto {
@@ -277,7 +279,7 @@ header div button {
  }
 
  .use-swiper img{
-    width: 250px;
+    width: 150px;
     object-fit: contain;
  }
 
