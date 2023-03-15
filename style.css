@@ -109,6 +109,10 @@ img {
 
 /*  HEADER - MOSQUERA*/
 
+#header-mobile {
+	display: none;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -401,3 +405,98 @@ footer p {
 	text-align: center;
 	color: #16191D;
 }
+
+
+/* -------------- ESTILOS MOBILE */
+
+@media (max-width: 900px) {
+
+    #header-mobile{
+        display: flex;
+    }
+
+    #header-desktop{
+        display: none;
+    }
+
+    .feature {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    #building-better {
+        padding: 20px;
+    }
+
+    /* Font Sizes */
+
+    h1, h3, .CTA-texto h3 , .imagen-principal h2 {
+	font-size: 20pt;
+    }
+
+    p, .CTA p {
+	font-size: 16pt;
+	max-width: 350px;
+    }
+
+    footer p {
+	font-size: 14pt;
+    }	
+
+    .imagen-principal p {
+	text-align: center
+    }
+
+    /* Image Sizes */
+
+    .swiper {
+	width: 90%;
+    }
+
+    .swiper img {
+        width: 60%;
+    }
+
+    footer img {
+	height: 100px;
+	width: 250px;
+    }
+
+    .store div img {
+	width: 350px;
+	margin-left: 0px;
+    }	
+
+    .use-more-info button {
+	width: 110px;
+	margin-bottom: 10px;
+    }
+
+    .controller div img {
+	width: 100%;
+    }
+
+    .CTA-cont-img img {
+	margin-left: 0px;
+    }
+
+    .carousel {
+	margin: 0px 25px;
+    }
+
+    .glider-slide img {
+	max-width: 90%;
+    }
+
+    /* Flex */
+
+    .header-block, header div, .imagen-principal, .imagen-principal-texto,
+    .CTA-comp-principal, .CTA, .CTA-cont-texto, .CTA-input, .CTA-texto,
+    .use-swiper-block, .controller-block, .use-more-info, .use-more-info-block,
+    .use-more-info-block div, .store, footer {
+	    flex-direction: column;
+	    align-items: center;
+    }
+
+}
+
