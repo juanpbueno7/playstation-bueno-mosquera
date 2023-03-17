@@ -419,6 +419,17 @@ footer p {
 
     #header-mobile{
         display: flex;
+        flex-direction: column;
+    }
+
+    .header-block {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    header div {
+        justify-content: center;
     }
 
     #header-desktop{
@@ -429,6 +440,8 @@ footer p {
 	display: none;
 	flex-direction: row;
     }
+
+
 
     .feature {
         width: 100%;
