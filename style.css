@@ -509,7 +509,7 @@ footer p {
 
     /* Flex */
 
-    .header-block, header div, .imagen-principal, .imagen-principal-texto,
+    .imagen-principal, .imagen-principal-texto,
     .CTA-comp-principal, .CTA, .CTA-cont-texto, .CTA-input, .CTA-texto,
     .use-swiper-block, .controller-block, .use-more-info, .use-more-info-block,
     .use-more-info-block div, .store, footer {
