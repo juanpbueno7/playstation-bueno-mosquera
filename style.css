@@ -194,7 +194,7 @@ header div button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
+    width: 100%;
     align-items: center;
 }
 
@@ -327,7 +327,7 @@ header div button {
 	 display: flex;
 	 justify-content: space-between;
 	 flex-direction: row;
-	 width: 900px;
+	 width: 100%;
  }
 .use-more-info-block div{
     display: flex;
