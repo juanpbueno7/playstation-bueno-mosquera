@@ -194,7 +194,7 @@ header div button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%;
+    width: 900px;
     align-items: center;
 }
 
@@ -327,7 +327,7 @@ header div button {
 	 display: flex;
 	 justify-content: space-between;
 	 flex-direction: row;
-	 width: 100%;
+	 width: 900px;
  }
 .use-more-info-block div{
     display: flex;
@@ -472,12 +472,20 @@ footer p {
 	margin-bottom: 10px;
     }
 
+    .use-more-info-block {
+	width: 100%;
+    }
+
     .controller div img {
 	width: 100%;
     }
 
     .CTA-cont-img img {
 	margin-left: 0px;
+    }
+
+    .CTA-comp-principal {
+	width: 100%;
     }
 
     .carousel {
