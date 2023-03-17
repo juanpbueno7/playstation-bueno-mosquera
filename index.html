@@ -58,7 +58,11 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
             <img src="./assets/ps_logo.png" alt="">
             <input placeholder="Search" type="text">    
         </div>
-	<div class="header-navegacion">
+	<a href="javascript:void(0);" class="ham-icon" onclick="hamburguer()">
+		<img src="assets/menu.png">
+	</a>
+	<div class="header-navegacion" id="ham-hidden">
+
 		<a href="./index.html">
 			<img src="assets/home.png">
 		</a>
@@ -72,7 +76,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 			<img src="assets/user.png">
 		</a>
 	</div>
-        <div>
+        <div class="ham-buttons" id="ham-buttons">
             <button> Log In </button>
             <button> Register </button>
         </div>

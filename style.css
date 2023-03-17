@@ -411,12 +411,23 @@ footer p {
 
 @media (max-width: 900px) {
 
+    /* HEADER */
+
+    #ham-hidden {
+	display: none;
+    }
+
     #header-mobile{
         display: flex;
     }
 
     #header-desktop{
         display: none;
+    }
+
+    .ham-buttons {
+	display: none;
+	flex-direction: row;
     }
 
     .feature {

@@ -1,5 +1,23 @@
 console.log("conectado")
 
+///////// HAMBURGUER /////////
+
+function hamburguer() {
+  let x = document.getElementById("ham-hidden");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+
+  let y = document.getElementById("ham-buttons");
+  if (y.style.display === "flex") {
+    y.style.display = "none";
+  } else {
+    y.style.display = "flex";
+  }
+}
+
 ///////// RESPONSIVE //////////
 
 const tablet = 768;
