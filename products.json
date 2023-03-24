@@ -1,0 +1,9 @@
+{
+  "name": "NOMBRE_PRODUCTO",
+  "desc": "DESCRIPCION_PRODUCTO",
+  "price": 1000.00,
+  "date": "02/22/2002",
+  "cat": "CATEGORIA",
+  "col": ["COLOR1", "COLOR2"],
+  "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+}
