@@ -1,9 +1,29 @@
-{
-  "name": "NOMBRE_PRODUCTO",
-  "desc": "DESCRIPCION_PRODUCTO",
-  "price": 1000.00,
-  "date": "02/22/2002",
-  "cat": "CATEGORIA",
-  "col": ["COLOR1", "COLOR2"],
-  "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
-}
+[
+  {
+    "name": "NOMBRE_PRODUCTO",
+    "desc": "DESCRIPCION_PRODUCTO",
+    "price": 1000.00,
+    "date": "02/22/2002",
+    "cat": "CATEGORIA",
+    "col": ["COLOR1", "COLOR2"],
+    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+  },
+  {
+    "name": "PlayStation 5",
+    "desc": "¡Bienvenidos a la experiencia de juego del futuro! Con su poderoso procesador AMD Zen 2 y una tarjeta gráfica AMD Radeon RDNA 2, la PS5 ofrece una experiencia de juego más rápida y fluida. Y no solo eso, sino que el diseño futurista de la consola te sumerge aún más en el juego. La PS5 es la culminación de años de innovación y evolución en la industria. ¡Únete a mí en la aventura y descubre lo que la PlayStation 5 puede hacer!",
+    "price": 499.99,
+    "date": "12/11/2020",
+    "cat": "Consolas",
+    "col": ["Blanco", "Negro"],
+    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+  },
+  {
+    "name": "PlayStation 4",
+    "desc": "La PlayStation 4 (PS4) es una consola de videojuegos de última generación que ofrece un rendimiento excepcional gracias a su procesador personalizado y su potente tarjeta gráfica. Con su sólida combinación de hardware y software, la PS4 es una de las consolas más populares del mercado y sigue siendo una opción atractiva para los entusiastas de los videojuegos que buscan una experiencia de juego de alta calidad.",
+    "price": 399.99,
+    "date": "15/11/2013",
+    "cat": "Consolas",
+    "col": ["Negro", "Dorado"],
+    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+  }
+]
