@@ -1,0 +1,58 @@
+/* titulo */
+
+.store-title-section {
+	padding: 30px;
+}
+
+.store-title-section p {
+	color: red;
+}
+
+/* filtro */
+
+
+
+/* lista de objetos */
+
+.store-list-article {
+	display: flex;
+	flex-direction: column;
+	margin: 30px;
+	border-radius: 30px;
+	background-color: lightslategray;
+}
+
+.store-list-section {
+	padding-bottom: 15px;
+	padding-top: 15px;
+	margin-bottom: 15px;
+	background-color: white;
+}
+
+.store-list-section article{
+	width: 350px;
+}
+
+.store-list-section p,h3 {
+	color: white;
+	text-align: left;
+}
+
+.store-list-section p {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 40px;
+}
+
+.store-list-section section {
+	padding: 10px 25px;
+	background-color: black;
+	border-radius: 0px 0px 30px 30px;
+}
+
+.store-list-section img {
+	width: 70%;
+	margin-left: 15%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
