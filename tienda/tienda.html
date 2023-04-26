@@ -85,7 +85,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 
      </header>
 
-    <!-- Seccion del producto -->
+    <!-- Division de tienda -->
 
     <div id="product-section" >
 
@@ -95,12 +95,12 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     
         <!-- select de filtrado -->
     
-        <select class="store-select" id="store-filter">
-            <option value="">Filter by...</option>
-            <option value="consoles">Consoles</option>
-            <option value="accessories">Accessories</option>
-            <option value="ps-plus">PS Plus</option>
-            <option value="games">Games</option>
+        <select class="store-select" id="store-filter" onselectionchange=catFilter()>
+            <option value="">No filter...</option>
+            <option value="Consoles">Consoles</option>
+            <option value="Accessories">Accessories</option>
+            <option value="PS Plus">PS Plus</option>
+            <option value="Games">Games</option>
         </select>
     
         </section>
@@ -121,11 +121,9 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
         </section>
     </div>
 
-    <div id="specific-product" >
+    <!-- division producto detalle -->
+    <div id="specific-product" > 
 
-     
-            
-    
     </div>
 
 
