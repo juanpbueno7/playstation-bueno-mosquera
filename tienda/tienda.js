@@ -5,7 +5,7 @@ let obj = {
         "date": "12/11/2020",
         "cat": "Consoles",
         "col": ["White", "Black"],
-        "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+        "img": ["assets/ps5.webp"]
 }
 
 let nameHTML = document.getElementById("tienda-seccion-nombre");
@@ -18,7 +18,16 @@ function returnDetails() {
 
 
 function setDetailsInfo(obj__) {
-    let specificName = document.getElementById("specific-name");
-    specificName.innerHTML= obj__.name;
+    let specifications = document.getElementById("specific-product");
+    specifications.innerHTML= `  <img id= "img-producto" src="../${obj__.img[0]}" alt="">        
+    <div id="specific-info">
+        <h1 id="specific-name"> ${obj__.name}</h1>
+        <h2>${obj__.price}</h2>
+        <p>${obj__.cat}</p>
+        <p>${obj__.desc}</p>
+    </div>";`
+
+    let closeWindow = document.getElementById("product-section").style.display = "none";
+
 }
 
