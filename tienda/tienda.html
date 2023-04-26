@@ -94,12 +94,12 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     
         <!-- select de filtrado -->
     
-        <select class="store-select" id="store-filter">
-            <option value="">Filter by...</option>
-            <option value="consoles">Consoles</option>
-            <option value="accessories">Accessories</option>
-            <option value="ps-plus">PS Plus</option>
-            <option value="games">Games</option>
+        <select class="store-select" id="store-filter" onselectionchange=catFilter()>
+            <option value="">No filter...</option>
+            <option value="Consoles">Consoles</option>
+            <option value="Accessories">Accessories</option>
+            <option value="PS Plus">PS Plus</option>
+            <option value="Games">Games</option>
         </select>
     
         </section>

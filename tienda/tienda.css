@@ -16,6 +16,7 @@
 
 .store-list-article {
 	display: flex;
+	justify-content: flex-end;
 	flex-direction: column;
 	margin: 30px;
 	border-radius: 30px;
@@ -27,15 +28,20 @@
 	padding-top: 15px;
 	margin-bottom: 15px;
 	background-color: white;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .store-list-section article{
 	width: 350px;
+	height: 500px;
 }
 
 .store-list-section p,h3 {
 	color: white;
 	text-align: left;
+	width: 300px;
 }
 
 .store-list-section p {
@@ -48,6 +54,7 @@
 	padding: 10px 25px;
 	background-color: black;
 	border-radius: 0px 0px 30px 30px;
+	height: 190px;
 }
 
 .store-list-section img {
