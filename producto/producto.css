@@ -1,0 +1,40 @@
+#specific-name {
+	color: #191C21;
+    margin-left: 20px;
+    padding-top: 20px;;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#specific-product{
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#specific-info{
+    display: flex;
+    flex-direction: column;
+}
+
+
+*{
+    font-family: 'Golos Text', sans-serif;
+}
+
+body {
+	margin: 0;
+	background-color: #16191D;
+}
+
+#img-producto {
+    width: 450px;
+    height: 450px;
+}
+
+h2{
+    color: red;
+}
+
