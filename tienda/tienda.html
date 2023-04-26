@@ -84,35 +84,46 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
 
      </header>
 
-    <!-- Seccion de titulo -->
+    <!-- Seccion del producto -->
 
-    <section class="store-title-section">
-	    <h2>PRODUCTS FOR YOU</h3>
-	    <p class="warning">Due to networking errors, only the essential and most popular items are shown</p>
+    <div style="">
 
-    <!-- select de filtrado -->
+        <section class="store-title-section">
+            <h2>PRODUCTS FOR YOU</h3>
+            <p class="warning">Due to networking errors, only the essential and most popular items are shown</p>
+    
+        <!-- select de filtrado -->
+    
+        <select class="store-select" id="store-filter">
+            <option value="">Filter by...</option>
+            <option value="consoles">Consoles</option>
+            <option value="accessories">Accessories</option>
+            <option value="ps-plus">PS Plus</option>
+            <option value="games">Games</option>
+        </select>
+    
+        </section>
+    
+        <!-- Lista de objetos -->
+    
+        <section class="store-list-section" id="store-list-section">
+    
+            <article class="store-list-article" id="article">
+                <img class="store-article-img" src="../assets/vr.webp">
+                <section>
+                    <h3 id="tienda-seccion-nombre">NAME</h3>
+                    <p>description esat ase flsekj  aslekfj si jsdaofi sdifu  jlk hsalkdj fa iusa iofjs agwrgheraghj  jlaksnd flkjsa faijerhgael jrighajlethgaekjlthglkaejglkhejtsgklsrtlgbkrshtljkgoskñelrjgvlksernjgklesrn lkjg</p>
+                    <button onclick=returnDetails()> Buy now</button>
+                </section>
+            </article>
+    
+        </section>
+    </div>
 
-    <select class="store-select" id="store-filter">
-	    <option value="">Filter by...</option>
-	    <option value="consoles">Consoles</option>
-	    <option value="accessories">Accessories</option>
-	    <option value="ps-plus">PS Plus</option>
-	    <option value="games">Games</option>
-    </select>
+    <div id="specific-product" > 
+        <h1 id="specific-name"> Nameeee</h1>
+    </div>
 
-    </section>
-
-    <!-- Lista de objetos -->
-
-    <section class="store-list-section" id="store-list-section">
-	    <article class="store-list-article">
-		    <img class="store-article-img" src="../assets/vr.webp">
-		    <section>
-			    <h3>NAME</h3>
-			    <p>description esat ase flsekj  aslekfj si jsdaofi sdifu  jlk hsalkdj fa iusa iofjs agwrgheraghj  jlaksnd flkjsa faijerhgael jrighajlethgaekjlthglkaejglkhejtsgklsrtlgbkrshtljkgoskñelrjgvlksernjgklesrn lkjg</p>
-		    </section>
-	    </article>
-    </section>
 
     <!-- Aqui es el footer -->
     <footer>
