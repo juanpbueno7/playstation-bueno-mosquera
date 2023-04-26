@@ -6,7 +6,7 @@
     "date": "12/11/2020",
     "cat": "Consoles",
     "col": ["White", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/ps5.webp"]
   },
   {
     "name": "PlayStation 4",
@@ -15,7 +15,7 @@
     "date": "15/11/2013",
     "cat": "Consoles",
     "col": ["Black", "Gold"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/ps4.webp"]
   },
   {
     "name": "DualSense Wireless Controller",
@@ -24,7 +24,7 @@
     "date": "12/11/2020",
     "cat": "Accessories",
     "col": ["Black", "Red"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/dualsense.webp"]
   },
   {
     "name": "PULSE 3D Wireless Headphones",
@@ -33,7 +33,7 @@
     "date": "20/8/2021",
     "cat": "Accessories",
     "col": ["White", "Silver"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/pulse-headset.webp"]
   },
   {
     "name": "Media Control",
@@ -42,7 +42,7 @@
     "date": "12/11/2020",
     "cat": "Accessories",
     "col": ["White", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/media-control.png"]
   },
   {
     "name": "HD Camera",
@@ -51,7 +51,7 @@
     "date": "19/11/2020",
     "cat": "Accessories",
     "col": ["White", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/hd-camera.webp"]
   },
   {
     "name": "PlayStation Plus Deluxe",
@@ -60,7 +60,7 @@
     "date": "10/5/2021",
     "cat": "PS Plus",
     "col": ["Yellow", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/ps-plus-deluxe.webp"]
   },
   {
     "name": "PlayStation Plus Extra",
@@ -69,7 +69,7 @@
     "date": "10/5/2021",
     "cat": "PS Plus",
     "col": ["Yellow", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/ps-plus-extra.webp"]
   },
   {
     "name": "PlayStation Plus Essential",
@@ -78,7 +78,7 @@
     "date": "10/5/2021",
     "cat": "PS Plus",
     "col": ["White", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/ps-plus-essential.webp"]
   },
   {
     "name": "PlayStation VR",
@@ -87,7 +87,7 @@
     "date": "10/11/2022",
     "cat": "Accessories",
     "col": ["White", "Black"],
-    "img": ["assets/IMAGEN_1.jpg, assets/IMAGEN_2.jpg"]
+    "img": ["assets/vr.webp"]
   },
   {
     "name": "Resident Evil 4: Remake",
