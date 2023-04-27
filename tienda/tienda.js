@@ -1,4 +1,5 @@
-let items, itemsFilter, itemSelect, filterInput;
+// filtros
+let itemsFilter, itemSelect, filterInput;
 
 let obj = {
         "name": "PlayStation 5",
@@ -10,31 +11,37 @@ let obj = {
         "img": ["assets/ps5.webp"]
 }
 
-let nameHTML = document.getElementById("tienda-seccion-nombre");
-nameHTML.textContent = obj.name;
-
+// filtro desplegable
 filterInput = document.getElementById("store-filter");
 filterInput.addEventListener('click', catFilter, {once:false});
 let fValue = filterInput.value;
 
-function returnDetails() {
-    console.log(obj)
-    setDetailsInfo(obj)
-}
-
+// divisores para mostrar detalle o tienda
+let specifications = document.getElementById("specific-product");
+let closeWindow = document.getElementById("product-section")
 
 function setDetailsInfo(obj__) {
-    let specifications = document.getElementById("specific-product");
-    specifications.innerHTML= `  <img id= "img-producto" src="../${obj__.img[0]}" alt="">        
-    <div id="specific-info">
-        <h1 id="specific-name"> ${obj__.name}</h1>
-        <h2>${obj__.price}</h2>
-        <p>${obj__.cat}</p>
-        <p>${obj__.desc}</p>
-    </div>";`
+    specifications.style.display = "flex"
+    specifications.innerHTML= 
+    `<button onclick=goback()> Go back </button>
+    <img id="img-producto" class="store-product-img" src="../${obj__.img[0]}">  
+    <section id="specific-info" class="store-product-section">
+        <h1 id="specific-name" class="store-product-name"> ${obj__.name}</h1>
+        <h2 class="store-product-price">${obj__.price}</h2>
+        <p class="store-product-category">${obj__.cat}</p>
+        <p class="store-product-description">${obj__.desc}</p>
+    </section>";`
 
-    let closeWindow = document.getElementById("product-section").style.display = "none";
+    closeWindow.style.display = "none";
+}
 
+function goback() {
+	specifications.style.display = "none";
+	closeWindow.style.display = "block";
+
+	while (specifications.firstChild){
+		specifications.removeChild(specifications.firstChild);
+	}
 }
 
 function catFilter() {
@@ -44,7 +51,6 @@ function catFilter() {
 
 function updateItems() {
 	const itemList = document.getElementById("store-list-section");
-	console.log(items);
 	console.log(itemsFilter);
 
 	while (itemList.firstChild){
@@ -76,8 +82,10 @@ function updateItems() {
 			section.append(p);
 
 			let button = document.createElement("button");
-			button.setAttribute("onclick","returnDetails()");
-			button.textContent = "Learn More";
+			button.value = j;
+			button.setAttribute("onclick",
+				"setDetailsInfo(itemsFilter[this.value])");
+			button.textContent = "See More";
 
 			section.append(button);
 
@@ -94,7 +102,6 @@ fetch("../productos.json")
 	return response.json();
 })
 .then(data => {
-	items = data;
 	itemsFilter = data;
 	updateItems();
 });
