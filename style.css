@@ -13,7 +13,7 @@ footer {
 }
 
 header {
-	background-color: #191C21;
+	background-color: #16191D;
 }
 
 img {
@@ -395,8 +395,8 @@ footer {
 }
 
 footer img {
-    height: 80px;
-    width: 200px;
+    height: 60px;
+    width: 180px;
     border-radius: 0;
 }
 
@@ -464,7 +464,7 @@ footer p {
     }
 
     footer p {
-	font-size: 14pt;
+	font-size: 6pt;
     }	
 
     .imagen-principal p {

@@ -24,7 +24,7 @@
     "date": "12/11/2020",
     "cat": "Accessories",
     "col": ["Black", "Red"],
-    "img": ["assets/dualsense.webp"]
+    "img": ["assets/control.png"]
   },
   {
     "name": "PULSE 3D Wireless Headphones",
@@ -60,7 +60,7 @@
     "date": "10/5/2021",
     "cat": "PS Plus",
     "col": ["Yellow", "Black"],
-    "img": ["assets/ps-plus-deluxe.webp"]
+    "img": ["assets/ps-plus-deluxe.png"]
   },
   {
     "name": "PlayStation Plus Extra",
