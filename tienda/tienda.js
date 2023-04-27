@@ -1,15 +1,6 @@
 // filtros
 let itemsFilter, itemSelect, filterInput;
 
-let obj = {
-        "name": "PlayStation 5",
-        "desc": "Welcome to the gaming experience of the future! With its powerful AMD Zen 2 processor and AMD Radeon RDNA 2 graphics card, the PS5 offers a faster and smoother gaming experience. And not only that, but the console's futuristic design immerses you even more in the game. The PS5 is the culmination of years of innovation and evolution in the industry. Join me on the adventure and see what the PlayStation 5 can do!",
-        "price": 499.99,
-        "date": "12/11/2020",
-        "cat": "Consoles",
-        "col": ["White", "Black"],
-        "img": ["assets/ps5.webp"]
-}
 
 // filtro desplegable
 filterInput = document.getElementById("store-filter");
@@ -53,10 +44,12 @@ function updateItems() {
 	const itemList = document.getElementById("store-list-section");
 	console.log(itemsFilter);
 
+    //Borra todos los ojetos para que se pueda actualizar
 	while (itemList.firstChild){
 		itemList.removeChild(itemList.firstChild);
 	}
 
+    //Actualizar los objetos basados en el filtro
 	for (let j = 0; j < itemsFilter.length; j++){
 		if(itemsFilter[j].cat === fValue || fValue === "") {
 			let article = document.createElement("article");
@@ -80,6 +73,10 @@ function updateItems() {
 			p.textContent = `${itemsFilter[j].desc}`;
 
 			section.append(p);
+
+            console.log()
+
+        
 
 			let button = document.createElement("button");
 			button.value = j;
