@@ -118,8 +118,8 @@ function setColor(color) {
 	productContainer.style.backgroundColor = color;
 	
 	// Desactivar todas las opciones de color
-	var colorOptions = document.getElementsByClassName("color-option");
-	for (var i = 0; i < colorOptions.length; i++) {
+	let colorOptions = document.getElementsByClassName("color-option");
+	for (let i = 0; i < colorOptions.length; i++) {
 	  colorOptions[i].classList.remove("active");
 	}
 	
