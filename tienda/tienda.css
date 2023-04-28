@@ -5,7 +5,7 @@
 }
 
 .store-title-section p {
-	color: rgb(255, 255, 255);
+	color: rgb(202, 33, 33);
 }
 
 /* filtro */
@@ -27,7 +27,7 @@
 	padding-bottom: 15px;
 	padding-top: 15px;
 	margin-bottom: 15px;
-	background-color: white;
+	background-color: #16191D;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -39,7 +39,7 @@
 }
 
 .store-list-section p,h3 {
-	color: white;
+	color: #16191D;
 	text-align: left;
 	width: 300px;
 }
@@ -52,7 +52,7 @@
 
 .store-list-section section {
 	padding: 10px 25px;
-	background-color: black;
+	background-color: rgb(255, 255, 255);
 	border-radius: 0px 0px 30px 30px;
 	height: 190px;
 }

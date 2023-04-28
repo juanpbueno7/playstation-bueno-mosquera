@@ -1,14 +1,5 @@
 [
   {
-    "name": "PlayStation 5",
-    "desc": "Welcome to the gaming experience of the future! With its powerful AMD Zen 2 processor and AMD Radeon RDNA 2 graphics card, the PS5 offers a faster and smoother gaming experience. And not only that, but the console's futuristic design immerses you even more in the game. The PS5 is the culmination of years of innovation and evolution in the industry. Join me on the adventure and see what the PlayStation 5 can do!",
-    "price": 499.99,
-    "date": "12/11/2020",
-    "cat": "Consoles",
-    "col": ["White", "Black"],
-    "img": ["assets/ps5.webp"]
-  },
-  {
     "name": "PlayStation 4",
     "desc": "The PlayStation 4 (PS4) is a state-of-the-art video game console that offers exceptional performance thanks to its custom processor and powerful graphics card. With its strong combination of hardware and software, the PS4 is one of the most popular consoles on the market and continues to be an attractive option for gaming enthusiasts looking for a high-quality gaming experience.",
     "price": 399.99,
@@ -16,6 +7,15 @@
     "cat": "Consoles",
     "col": ["Black", "Gold"],
     "img": ["assets/ps4.webp"]
+  },
+  {
+    "name": "PlayStation 5",
+    "desc": "Welcome to the gaming experience of the future! With its powerful AMD Zen 2 processor and AMD Radeon RDNA 2 graphics card, the PS5 offers a faster and smoother gaming experience. And not only that, but the console's futuristic design immerses you even more in the game. The PS5 is the culmination of years of innovation and evolution in the industry. Join me on the adventure and see what the PlayStation 5 can do!",
+    "price": 499.99,
+    "date": "12/11/2020",
+    "cat": "Consoles",
+    "col": ["White", "Black"],
+    "img": ["assets/ps5.webp"]
   },
   {
     "name": "DualSense Wireless Controller",
@@ -90,13 +90,13 @@
     "img": ["assets/vr.webp"]
   },
   {
-    "name": "Resident Evil 4: Remake",
+    "name": "Resident Evil 4",
     "desc": "A thrilling reimagining of Capcom's groundbreaking action-horror classic. Six years after the events of Resident Evil 2, Raccoon City survivor Leon Kennedy has been dispatched to a secluded European village to investigate the disappearance of the US president’s daughter. What he discovers there is unlike anything he has faced before.",
     "price": 59.99,
     "date": "03/22/2023",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/resident-evil.png"]
   },
   {
     "name": "God of War Ragnarok",
@@ -105,7 +105,7 @@
     "date": "11/9/2002",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/god-of-war.png"]
   },
   {
     "name": "Horizon Forbidden West",
@@ -114,43 +114,43 @@
     "date": "02/18/2022",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/horizon.png"]
   },
   {
-    "name": "Marvel's Spider-Man: Miles Morales",
+    "name": "Marvel's Spider-Man",
     "desc": "Experience the rise of Miles Morales as the new hero masters incredible, explosive new powers to become his own Spider-Man. In the latest adventure in the Marvel’s Spider-Man universe, teenager Miles Morales is adjusting to his new home while following in the footsteps of his mentor, Peter Parker, as a new Spider-Man.",
     "price": 49.99,
     "date": "11/12/2020",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/spider-man.png"]
   },
   {
-    "name": "Ratchet & Clank: Rift Apart",
+    "name": "Ratchet & Clank",
     "desc": "Go dimension-hopping with Ratchet and Clank as they take on an evil emperor from another reality. Jump between action-packed worlds, and beyond at mind-blowing speeds – complete with dazzling visuals and an insane arsenal – as the intergalactic adventurers blast onto the PS5 console.",
     "price": 69.99,
     "date": "06/10/2021",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/ratchet-clank.png"]
   },
   {
-    "name": "DEATH STRANDING DIRECTORS CUT",
+    "name": "Death Stranding",
     "desc": "In the future, a mysterious event known as the Death Stranding has opened a doorway between the living and the dead, leading to grotesque creatures from the afterlife roaming the fallen world marred by a desolate society.",
     "price": 59.99,
     "date": "09/23/2021",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/death.png"]
   },
   {
-    "name": "Sackboy: A Big Adventure",
+    "name": "Sackboy Adventure",
     "desc": "The dastardly Vex (a near-mythical being born of chaos and fear, no less) kidnaps Sackboy’s friends and forces them to build his Topsy Turver. Take down Vex. Save the sack-folk. Save the day. It’s time to fulfill your destiny, Sackboy. From woolly wonderkid and hessian hero… rise our Knitted Knight.",
     "price": 59.99,
     "date": "11/12/2020",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/sackboy.png"]
   },
   {
     "name": "Demons Souls",
@@ -159,7 +159,7 @@
     "date": "11/12/2020",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/demons.png"]
   },
   {
     "name": "Gran Turismo 7",
@@ -168,15 +168,15 @@
     "date": "03/94/2022",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/gran-turismo.png"]
   },
   {
-    "name": "Ghost of Tsushima Directors Cut",
+    "name": "Ghost of Tsushima",
     "desc": "Forge a new path and wage an unconventional war for the freedom of Tsushima. Challenge opponents with your katana, master the bow to eliminate distant threats, develop stealth tactics to ambush enemies and explore a new story on Iki Island.",
     "price": 69.99,
     "date": "08/19/2019",
     "cat": "Games",
     "col": ["COLOR1", "COLOR2"],
-    "img": ["assets/IMAGEN_1.jpg", "assets/IMAGEN_2.jpg"]
+    "img": ["assets/ghost.png"]
   }
 ]
