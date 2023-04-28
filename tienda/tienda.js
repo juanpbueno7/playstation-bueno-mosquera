@@ -1,7 +1,6 @@
 // filtros
 let itemsFilter, itemSelect, filterInput;
 
-
 // filtro desplegable
 filterInput = document.getElementById("store-filter");
 filterInput.addEventListener('click', catFilter, {once:false});
@@ -14,14 +13,16 @@ let closeWindow = document.getElementById("product-section")
 function setDetailsInfo(obj__) {
     specifications.style.display = "flex"
     specifications.innerHTML= 
-    `<button onclick=goback()> Go back </button>
+    `<button class="store-product-back" 
+    	onclick=goback()><img src="../assets/back.png"></button>
     <img id="img-producto" class="store-product-img" src="../${obj__.img[0]}">  
     <section id="specific-info" class="store-product-section">
         <h1 id="specific-name" class="store-product-name"> ${obj__.name}</h1>
         <h2 class="store-product-price">${obj__.price}</h2>
-        <p class="store-product-category">${obj__.cat}</p>
+        <h3 class="store-product-category">${obj__.cat}</h3>
         <p class="store-product-description">${obj__.desc}</p>
-    </section>";`
+	<button class="store-product-button" onclick=addItem()> Add to cart </button>
+    </section>`;
 
     closeWindow.style.display = "none";
 }
@@ -44,12 +45,10 @@ function updateItems() {
 	const itemList = document.getElementById("store-list-section");
 	console.log(itemsFilter);
 
-    //Borra todos los ojetos para que se pueda actualizar
 	while (itemList.firstChild){
 		itemList.removeChild(itemList.firstChild);
 	}
 
-    //Actualizar los objetos basados en el filtro
 	for (let j = 0; j < itemsFilter.length; j++){
 		if(itemsFilter[j].cat === fValue || fValue === "") {
 			let article = document.createElement("article");
@@ -73,10 +72,6 @@ function updateItems() {
 			p.textContent = `${itemsFilter[j].desc}`;
 
 			section.append(p);
-
-            console.log()
-
-        
 
 			let button = document.createElement("button");
 			button.value = j;
