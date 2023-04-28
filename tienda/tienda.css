@@ -64,3 +64,12 @@
 	margin-bottom: 5%;
 }
 
+/* --- mobile --- */
+
+@media (max-width: 900px){
+
+	.store-list-section h3 {
+		font-size: 20px;
+	}
+}
+

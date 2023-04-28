@@ -66,6 +66,9 @@ h2{
 .store-product-back {
 	height: 55px;
 }
+.store-product-price {
+	color: red;
+}
 
 /* --- mobile --- */
 
