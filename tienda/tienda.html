@@ -29,7 +29,7 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
          <!-- Aqui hay tres divs que contienen tres componentes diferentes del header-->
          <div>
              <img src="../assets/ps_logo.png" alt="">
-             <input placeholder="Search" type="text">
+             <input placeholder="Search" type="text" id="item-search">
          </div>
          <div class="header-navegacion">
                  <a href="../index.html">
@@ -101,6 +101,12 @@ href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
             <option value="PS Plus">PS Plus</option>
             <option value="Games">Games</option>
         </select>
+
+	<input placeholder="Min price" type="text" id="pr-min">
+	<input placeholder="Max price" type="text" id="pr-max">
+	
+	<button onclick=filterItems() id="button-update"> Filter </button>
+	<button onclick=clearFilters() id="button-update"> Clear </button>
     
         </section>
     
