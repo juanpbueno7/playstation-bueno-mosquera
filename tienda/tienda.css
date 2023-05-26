@@ -64,6 +64,29 @@
 	margin-bottom: 5%;
 }
 
+.color-option {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	margin-right: 10px;
+	cursor: pointer;
+	display: inline-block;
+  }
+  
+  .color-option:hover {
+	box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+}
+
+#product-image-container {
+	margin-top: 10px;
+	border: 1px solid #ccc;
+	padding: 10px;
+}
+  
+  #product-image {
+	max-width: 100%;
+}
+
 /* --- mobile --- */
 
 @media (max-width: 900px){
@@ -72,4 +95,5 @@
 		font-size: 20px;
 	}
 }
+
 

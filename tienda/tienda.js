@@ -21,7 +21,22 @@ function setDetailsInfo(obj__) {
         <h2 class="store-product-price">${obj__.price}</h2>
         <h3 class="store-product-category">${obj__.cat}</h3>
         <p class="store-product-description">${obj__.desc}</p>
+		<div id="color-options">
+		<h3>Select a color:<h3>
+		<div class="color-option" onclick="setColor('red')" style="background-color: red;"></div>
+		<div class="color-option" onclick="setColor('blue')" style="background-color: blue;"></div>
+		<div class="color-option" onclick="setColor('green')" style="background-color: green;"></div>
+		<div class="color-option" onclick="setColor('yellow')" style="background-color: yellow;"></div>
+	  </div>
 	<button class="store-product-button" onclick=addItem()> Add to cart </button>
+
+<div id="product-container">
+  <!-- Contenido del producto aquí -->
+</div>
+
+<div id="product-container">
+  <!-- Contenido del producto aquí -->
+</div>
     </section>`;
 
     closeWindow.style.display = "none";
@@ -131,3 +146,17 @@ fetch("../productos.json")
 	items = data;
 	updateItems();
 });
+
+function setColor(color) {
+	let productContainer = document.getElementById("product-container");
+	productContainer.style.backgroundColor = color;
+	
+	// Desactivar todas las opciones de color
+	let colorOptions = document.getElementsByClassName("color-option");
+	for (let i = 0; i < colorOptions.length; i++) {
+	  colorOptions[i].classList.remove("active");
+	}
+	
+	// Activar la opción de color seleccionada
+	event.target.classList.add("active");
+}
