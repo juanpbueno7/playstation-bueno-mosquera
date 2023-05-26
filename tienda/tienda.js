@@ -1,5 +1,5 @@
 // filtros
-let itemsFilter, itemSelect, filterInput;
+let items, itemsFilter, itemSelect, filterInput, filters;
 
 // filtro desplegable
 filterInput = document.getElementById("store-filter");
@@ -56,9 +56,42 @@ function catFilter() {
 	updateItems();
 }
 
+function filterItems(){
+	itemsFilter = [...items];
+
+	filters = {
+		price: [document.getElementById('pr-min').value,
+			document.getElementById('pr-max').value]
+	};
+
+	if(filters.price[0] === '' || filters.price[0] === undefined) {
+		filters.price[0] = 0;
+	}
+
+	if(filters.price[1] === '' || filters.price[1] === undefined) {
+		filters.price[1] = 999999;
+	}
+
+	const itemsPrice = itemsFilter.filter(obj => (obj.price > filters.price[0] 
+		&& obj.price < filters.price[1]));
+
+	itemsFilter = itemsPrice;
+	
+	updateItems();
+}
+
+function clearFilters() {
+	document.getElementById('pr-min').value = '';
+	document.getElementById('pr-max').value = '';
+	filterInput.value = '';
+
+	filterItems();
+}
+
 function updateItems() {
 	const itemList = document.getElementById("store-list-section");
 	console.log(itemsFilter);
+	console.log(items);
 
 	while (itemList.firstChild){
 		itemList.removeChild(itemList.firstChild);
@@ -110,6 +143,7 @@ fetch("../productos.json")
 })
 .then(data => {
 	itemsFilter = data;
+	items = data;
 	updateItems();
 });
 
